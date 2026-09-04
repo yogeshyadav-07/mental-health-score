@@ -41,7 +41,11 @@ class PredictionResponse(BaseModel):
     predicted_mental_health_score:float
     #6.777777 -> float
 
-
+@app.get('/')
+def home():
+    return {
+        "message" : "Welcome to the Mental Health Score API"
+    }
 
 @app.post('/predict', response_model=PredictionResponse) #6.77777
 def predict(data: StudentData):
