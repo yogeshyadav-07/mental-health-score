@@ -61,10 +61,10 @@ function heuristicPreview(){
 }
 
 function bandFor(score){
-  if(score >= 7.5) return {label:'Thriving', color:'#8FC1A8'};
-  if(score >= 5.5) return {label:'Steady', color:'#DDA34F'};
-  if(score >= 3.5) return {label:'Under strain', color:'#E0954A'};
-  return {label:'Needs attention', color:'#C9707A'};
+  if(score >= 7.5) return {label:'Thriving', color:'#2F6E52'};
+  if(score >= 5.5) return {label:'Steady', color:'#B97A2E'};
+  if(score >= 3.5) return {label:'Under strain', color:'#C1732F'};
+  return {label:'Needs attention', color:'#B3505C'};
 }
 
 function paintGauge(score, {isFinal=false}={}){
